@@ -50,9 +50,8 @@ func main() {
 		return
 	}
 	if solution == nil {
-		fmt.Println("Çözülemedi...")
-		fmt.Println("Frontier'e Giren Düğüm Sayısı:", frontier)
-		fmt.Println("Frontier'den Çıkan Düğüm Sayısı:", expanded)
+		fmt.Println("Number of nodes entering:", frontier)
+		fmt.Println("Number of nodes from frontier:", expanded)
 		fmt.Println("End...", time.Now())
 		return
 	}
@@ -70,9 +69,9 @@ func main() {
 		utils.StatePrinter(next.Board)
 	}
 
-	fmt.Println("Çözüm Maliyeti:", solution.NumMoves)
-	fmt.Println("Frontier'e Giren Düğüm Sayısı:", frontier)
-	fmt.Println("Frontier'den Çıkan Düğüm Sayısı:", expanded)
+	fmt.Println("Solution cost:", solution.NumMoves)
+	fmt.Println("Number of nodes:", frontier)
+	fmt.Println("Number of nodes from frontier:", expanded)
 	fmt.Println("End...", time.Now())
 	elapsed := time.Since(startTime)
 	fmt.Println("Process took:", elapsed)
