@@ -6,7 +6,7 @@ This is a program written in Go that solves the 8-puzzle problem using two searc
 
 1. Clone this repository:
 
-```bash
+'''bash
 git clone https://github.com/brice-allen/csci4202.git
 
 2. Navigate to the hw01 directory:
